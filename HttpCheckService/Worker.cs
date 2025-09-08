@@ -10,10 +10,10 @@ using Serilog;
 public class Worker : BackgroundService
 {
     private readonly ILogger<Worker> _logger;
-    private readonly string _targetIp = "10.10.10.103";
+    private readonly string _targetIp = "192.168.31.182";
     private readonly int _targetPort = 9000;
-    private readonly string _pythonServerDirectory = @"D:\Documents\HttpServer";
-    private readonly string _pythonServerScript = @"C:\Users\wjk\AppData\Local\Programs\Python\Python310\python.exe";
+    private readonly string _pythonServerDirectory = @"C:\Users\xj\Documents\HttpServer";
+    private readonly string _pythonServerScript = @"C:\Users\xj\AppData\Local\Programs\Python\Python313\python.exe";
     private Process? _pythonProcess;
     private Task? _monitoringTask;
     private CancellationTokenSource? _monitoringCts;
